@@ -132,9 +132,13 @@
   }
 
   hgroup p {
-    color: gray;
+    color: darkslategray;
     margin: 0;
     padding: 0;
+  }
+
+  :global(.dark) hgroup p {
+    color: lightgray;
   }
 
   hgroup a {
