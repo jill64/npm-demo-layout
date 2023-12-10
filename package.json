@@ -5,8 +5,7 @@
   "main": "dist/index.js",
   "type": "module",
   "files": [
-    "dist",
-    "!**/*.test.*"
+    "dist"
   ],
   "exports": {
     "./highlight/languages": {
@@ -62,10 +61,16 @@
   "license": "MIT",
   "bugs": "https://github.com/jill64/npm-demo-layout/issues",
   "homepage": "https://github.com/jill64/npm-demo-layout#readme",
-  "author": "jill64 <intents.turrets0h@icloud.com> (https://github.com/jill64)",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": "",
+    "image": ""
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jill64/npm-demo-layout.git"
+    "url": "https://github.com/jill64/npm-demo-layout.git",
+    "image": ""
   },
   "publishConfig": {
     "access": "public"
