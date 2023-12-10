@@ -9,20 +9,24 @@
 
   export let packageJson: {
     name: string
-    description?: string
+    description: string
+    homepage: string
+    author: {
+      name: string
+      url: string
+      image: string
+    }
+    repository: {
+      image: string
+    }
   }
 
-  $: ({ name: title, description = '' } = packageJson)
-  $: repo = title.split('/').pop()
-  $: href = `https://github.com/jill64/${repo}`
+  $: ({ name, author, description, homepage, repository } = packageJson)
 </script>
 
 <svelte:head>
-  <title>{title}</title>
-  <link
-    rel="icon"
-    href="https://raw.githubusercontent.com/jill64/jill64/main/jill.png"
-  />
+  <title>{name}</title>
+  <link rel="icon" href={author.image} />
   <meta name="description" content={description} />
   {#if browser}
     <meta data-testid="hydrated" />
@@ -30,19 +34,19 @@
 </svelte:head>
 
 <Toaster />
-<OGP {title} site_name={title} {description} image={href} />
+<OGP title={name} site_name={name} {description} image={repository.image} />
 <ThemeManager />
 <HighlightSwitcher name={$theme === 'dark' ? 'githubDark' : 'github'} />
 
 <header>
   <hgroup>
-    <h1><a href="/">{title}</a></h1>
-    <Badges name={title} />
+    <h1><a href="/">{name}</a></h1>
+    <Badges {name} />
     <p>{description}</p>
   </hgroup>
   <span>
     <FlipButton />
-    <GitHubLogo {href} />
+    <GitHubLogo href={homepage} />
   </span>
 </header>
 
@@ -51,8 +55,8 @@
 <footer>
   <small>
     © {new Date().getFullYear()}
-    <a {href}>{title}</a> - by
-    <a href="https://github.com/jill64"> jill64 </a>
+    <a href={homepage}>{name}</a> - by
+    <a href={author.url}> {author.name} </a>
   </small>
 </footer>
 
