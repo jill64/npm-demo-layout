@@ -1,2 +1,2 @@
-# npm-demo-layout
-🎨 Layout template for npm library demo site
+<!----- BEGIN GHOST DOCS HEADER ----->
+<!----- END GHOST DOCS HEADER ----->
