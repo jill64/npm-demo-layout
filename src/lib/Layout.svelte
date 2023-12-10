@@ -84,10 +84,26 @@
     margin: 0;
     padding: 0 1rem;
   }
+  :global(body),
+  :global(.light body) {
+    background-color: whitesmoke;
+    color: black;
+  }
 
   :global(.dark body) {
     background-color: #161616;
     color: whitesmoke;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :global(body) {
+      background-color: #161616;
+      color: whitesmoke;
+    }
+    :global(.light body) {
+      background-color: whitesmoke;
+      color: black;
+    }
   }
 
   :global(input) {
