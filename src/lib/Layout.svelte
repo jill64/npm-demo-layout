@@ -4,6 +4,7 @@
   import { OGP } from '@jill64/svelte-ogp'
   import { Toaster } from '@jill64/svelte-toast'
   import { HighlightSwitcher } from 'svelte-highlight-switcher'
+  import Badges from './Badges.svelte'
   import GitHubLogo from './GitHubLogo.svelte'
 
   export let packageJson: {
@@ -35,9 +36,8 @@
 
 <header>
   <hgroup>
-    <a href="/">
-      <h1>{title}</h1>
-    </a>
+    <h1><a href="/">{title}</a></h1>
+    <Badges name={title} />
     <p>{description}</p>
   </hgroup>
   <span>
@@ -82,6 +82,14 @@
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
+    padding-bottom: 1.75rem;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    padding-top: 1.25rem;
+    padding-bottom: 0.5rem;
   }
 
   header a {
@@ -89,8 +97,21 @@
     color: inherit;
   }
 
-  header p {
+  hgroup p {
     color: gray;
+    margin: 0;
+    padding: 0;
+  }
+
+  hgroup a {
+    display: inline-flex;
+  }
+
+  hgroup {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   header span {
@@ -102,7 +123,8 @@
   }
 
   footer {
-    padding: 2rem;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
