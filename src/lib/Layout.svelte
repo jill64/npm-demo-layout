@@ -33,7 +33,7 @@
   {/if}
 </svelte:head>
 
-<Toaster />
+<Toaster dark={$theme === 'dark'} />
 <OGP title={name} site_name={name} {description} image={repository.image} />
 <ThemeManager />
 <HighlightSwitcher name={$theme === 'dark' ? 'githubDark' : 'github'} />
