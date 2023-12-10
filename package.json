@@ -62,15 +62,15 @@
   "bugs": "https://github.com/jill64/npm-demo-layout/issues",
   "homepage": "https://github.com/jill64/npm-demo-layout#readme",
   "author": {
-    "name": "",
-    "email": "",
-    "url": "",
-    "image": ""
+    "name": "jill64",
+    "email": "143883742+jill64@users.noreply.github.com",
+    "url": "https://github.com/jill64",
+    "image": "https://avatars.githubusercontent.com/u/143883742?v=4"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/npm-demo-layout.git",
-    "image": ""
+    "image": "https://opengraph.githubassets.com/486a3737c5da85a4a57bc4fb9d66f0653ff64b01bb6126e3e99283fcedde3701/jill64/npm-demo-layout"
   },
   "publishConfig": {
     "access": "public"
