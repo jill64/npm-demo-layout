@@ -6,7 +6,7 @@
   import { HighlightSwitcher } from 'svelte-highlight-switcher'
   import Badges from './Badges.svelte'
   import GitHubLogo from './GitHubLogo.svelte'
-  
+
   export let packageJson: {
     name: string
     description: string
@@ -38,11 +38,11 @@
 
 <Toaster dark={$theme === 'dark'} />
 {#if disableOGP}
-<OGP title={name} site_name={name} {description} image={repository.image} />
+  <OGP title={name} site_name={name} {description} image={repository.image} />
 {/if}
 <ThemeManager />
 {#if disableThemeSwitcher}
-<HighlightSwitcher name={$theme === 'dark' ? 'githubDark' : 'github'} />
+  <HighlightSwitcher name={$theme === 'dark' ? 'githubDark' : 'github'} />
 {/if}
 
 <header>
