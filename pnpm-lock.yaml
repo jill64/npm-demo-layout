@@ -15,8 +15,8 @@ dependencies:
     specifier: 1.2.5
     version: 1.2.5(svelte@4.2.8)
   svelte-code-copy:
-    specifier: 0.0.1
-    version: 0.0.1(svelte@4.2.8)
+    specifier: 0.0.2
+    version: 0.0.2(svelte@4.2.8)
   svelte-highlight:
     specifier: 7.4.2
     version: 7.4.2
@@ -534,6 +534,10 @@ packages:
   /@humanwhocodes/object-schema@2.0.1:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
     dev: true
+
+  /@jill64/async-observer@1.2.0:
+    resolution: {integrity: sha512-qXM9YZMZPO8mQ3bMyAtHjlxyH9Q74tCbEinZVDzYgpGwKLNEFF/1099bPLBCBfUkOgOiwwB5H7/o8EvpTg+Lbg==}
+    dev: false
 
   /@jill64/attempt@1.1.0:
     resolution: {integrity: sha512-eHAN3A6DJXXiaIf7TFcjnj35thBNFRFwo6kXkKyoO3WqZaUDKXXyTZdL7TfWWvkKRrP1HwZY2rbLw9C9XNc0nw==}
@@ -2703,11 +2707,12 @@ packages:
       ts-serde: 1.0.0
     dev: false
 
-  /svelte-code-copy@0.0.1(svelte@4.2.8):
-    resolution: {integrity: sha512-LWjjtclIGaVf2f8Ho8RPC5yMlEJN5BFnBPxXchgF4Bbn0O1QwVTDWxbB3TG5VagwumMQOVC6PR6MMolHghor/A==}
+  /svelte-code-copy@0.0.2(svelte@4.2.8):
+    resolution: {integrity: sha512-1SnvrW5KYd8Dc7nAziH9CHYJLDhbhSPM60hGh9zt7EQSZS2Ueq/GGtp+s33PwT4OtkW99N8EnO6Cc/7kipj8bg==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
+      '@jill64/async-observer': 1.2.0
       svelte: 4.2.8
       svelte-feather-icons: 4.0.1
     dev: false
