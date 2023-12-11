@@ -54,6 +54,7 @@
   "dependencies": {
     "@jill64/svelte-dark-theme": "2.2.14",
     "@jill64/svelte-ogp": "0.1.0",
+    "@jill64/svelte-sanitize": "1.0.1",
     "@jill64/svelte-toast": "1.2.5",
     "svelte-code-copy": "0.0.2",
     "svelte-highlight": "7.4.2",

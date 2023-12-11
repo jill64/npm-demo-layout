@@ -1,24 +1,15 @@
 <script lang="ts">
-  export let name: string
+  import { Render } from '@jill64/svelte-sanitize'
 
-  $: href = `https://npmjs.com/package/${name}`
+  export let README: string
 
-  const prefix = 'https://img.shields.io'
+  $: badges = README.match(
+    /<!----- BEGIN GHOST DOCS BADGES ----->(.*)<!----- END GHOST DOCS BADGES ----->/
+  )?.[1] ?? ''
 </script>
 
 <span>
-  <a {href}>
-    <img alt="npm-version" src="{prefix}/npm/v/{name}" />
-  </a>
-  <a {href}>
-    <img alt="npm-license" src="{prefix}/npm/l/{name}" />
-  </a>
-  <a {href}>
-    <img alt="npm-download-month" src="{prefix}/npm/dm/{name}" />
-  </a>
-  <a {href}>
-    <img alt="npm-min-size" src="{prefix}/bundlephobia/min/{name}" />
-  </a>
+  <Render html={badges} />
 </span>
 
 <style>

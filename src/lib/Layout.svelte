@@ -7,6 +7,7 @@
   import Badges from './Badges.svelte'
   import GitHubLogo from './GitHubLogo.svelte'
 
+  export let README: string
   export let packageJson: {
     name: string
     description: string
@@ -51,7 +52,7 @@
 <header>
   <hgroup>
     <h1><a href="/">{name}</a></h1>
-    <Badges {name} />
+    <Badges {README} />
     <p>{description}</p>
   </hgroup>
   <span>
