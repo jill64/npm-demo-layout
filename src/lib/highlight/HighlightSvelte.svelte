@@ -6,6 +6,6 @@
   export let code: string
 </script>
 
-<CodeCopy effect={$theme === 'dark' ? 'pop' : 'push'}>
+<CodeCopy color="inherit" effect={$theme === 'dark' ? 'pop' : 'push'}>
   <HighlightSvelte {code} />
 </CodeCopy>
