@@ -16,6 +16,12 @@
 npm i @jill64/npm-demo-layout
 ```
 
+If you have problems building with pnpm, try the following
+
+```sh
+pnpm i -D @jill64/universal-sanitizer
+```
+
 ## Usage
 
 ```svelte
