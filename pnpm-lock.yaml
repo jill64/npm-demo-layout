@@ -14,6 +14,9 @@ dependencies:
   '@jill64/svelte-toast':
     specifier: 1.2.5
     version: 1.2.5(svelte@4.2.8)
+  svelte-code-copy:
+    specifier: ^0.0.1
+    version: 0.0.1(svelte@4.2.8)
   svelte-highlight:
     specifier: 7.4.2
     version: 7.4.2
@@ -2698,6 +2701,15 @@ packages:
       cookie: 0.6.0
       svelte: 4.2.8
       ts-serde: 1.0.0
+    dev: false
+
+  /svelte-code-copy@0.0.1(svelte@4.2.8):
+    resolution: {integrity: sha512-LWjjtclIGaVf2f8Ho8RPC5yMlEJN5BFnBPxXchgF4Bbn0O1QwVTDWxbB3TG5VagwumMQOVC6PR6MMolHghor/A==}
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
+      svelte: 4.2.8
+      svelte-feather-icons: 4.0.1
     dev: false
 
   /svelte-eslint-parser@0.33.1(svelte@4.2.8):
