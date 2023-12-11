@@ -21,6 +21,9 @@
     }
   }
 
+  export let disableThemeSwitcher = false
+  export let disableOGP = false
+
   $: ({ name, author, description, homepage, repository } = packageJson)
 </script>
 
@@ -34,9 +37,13 @@
 </svelte:head>
 
 <Toaster dark={$theme === 'dark'} />
-<OGP title={name} site_name={name} {description} image={repository.image} />
+{#if disableOGP}
+  <OGP title={name} site_name={name} {description} image={repository.image} />
+{/if}
 <ThemeManager />
-<HighlightSwitcher name={$theme === 'dark' ? 'githubDark' : 'github'} />
+{#if disableThemeSwitcher}
+  <HighlightSwitcher name={$theme === 'dark' ? 'githubDark' : 'github'} />
+{/if}
 
 <header>
   <hgroup>
