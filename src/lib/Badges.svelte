@@ -1,23 +1,19 @@
 <script lang="ts">
-  import { Render } from '@jill64/svelte-sanitize'
+  import { sanitize } from '@jill64/universal-sanitizer'
 
   export let README: string
 
-  $: badges =
+  $: badges = sanitize(
     README.match(
       /<!----- BEGIN GHOST DOCS BADGES ----->(.*)<!----- END GHOST DOCS BADGES ----->/
-    )?.[1] ?? ''
+    )?.[1] ?? '',
+    { sanitizeHtml: { allowedTags: ['a', 'img'] } }
+  )
 </script>
 
 <span>
-  <Render
-    html={badges}
-    options={{
-      sanitizeHtml: {
-        allowedTags: ['a', 'img']
-      }
-    }}
-  />
+  <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+  {@html badges}
 </span>
 
 <style>
