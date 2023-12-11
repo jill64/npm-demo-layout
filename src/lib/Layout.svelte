@@ -191,4 +191,11 @@
   small a:hover {
     text-decoration: underline;
   }
+  :global(code.hljs) {
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  :global(.dark code.hljs) {
+    border: 1px solid #252525;
+  }
 </style>
