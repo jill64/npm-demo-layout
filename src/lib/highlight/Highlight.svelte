@@ -10,6 +10,6 @@
     : never)['language']
 </script>
 
-<CodeCopy effect={$theme === 'dark' ? 'pop' : 'push'}>
+<CodeCopy color="inherit" effect={$theme === 'dark' ? 'pop' : 'push'}>
   <Highlight {code} {language} />
 </CodeCopy>
