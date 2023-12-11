@@ -37,11 +37,14 @@
 </svelte:head>
 
 <Toaster dark={$theme === 'dark'} />
-{#if disableOGP}
+
+{#if !disableOGP}
   <OGP title={name} site_name={name} {description} image={repository.image} />
 {/if}
+
 <ThemeManager />
-{#if disableThemeSwitcher}
+
+{#if !disableThemeSwitcher}
   <HighlightSwitcher name={$theme === 'dark' ? 'githubDark' : 'github'} />
 {/if}
 
