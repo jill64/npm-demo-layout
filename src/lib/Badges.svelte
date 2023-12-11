@@ -10,7 +10,14 @@
 </script>
 
 <span>
-  <Render html={badges} />
+  <Render
+    html={badges}
+    options={{
+      sanitizeHtml: {
+        allowedTags: ['a', 'img']
+      }
+    }}
+  />
 </span>
 
 <style>
