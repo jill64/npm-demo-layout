@@ -3,9 +3,10 @@
 
   export let README: string
 
-  $: badges = README.match(
-    /<!----- BEGIN GHOST DOCS BADGES ----->(.*)<!----- END GHOST DOCS BADGES ----->/
-  )?.[1] ?? ''
+  $: badges =
+    README.match(
+      /<!----- BEGIN GHOST DOCS BADGES ----->(.*)<!----- END GHOST DOCS BADGES ----->/
+    )?.[1] ?? ''
 </script>
 
 <span>
