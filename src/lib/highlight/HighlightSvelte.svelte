@@ -7,5 +7,5 @@
 </script>
 
 <CodeCopy color="inherit" effect={$theme === 'dark' ? 'pop' : 'push'}>
-  <HighlightSvelte {code} />
+  <HighlightSvelte code={code.trim()} />
 </CodeCopy>

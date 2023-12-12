@@ -7,5 +7,5 @@
 </script>
 
 <CodeCopy color="inherit" effect={$theme === 'dark' ? 'pop' : 'push'}>
-  <HighlightAuto {code} />
+  <HighlightAuto code={code.trim()} />
 </CodeCopy>
