@@ -8,6 +8,9 @@ dependencies:
   '@jill64/svelte-dark-theme':
     specifier: 2.2.14
     version: 2.2.14(@sveltejs/kit@1.29.0)(svelte@4.2.8)
+  '@jill64/svelte-menu':
+    specifier: 0.0.3
+    version: 0.0.3(svelte@4.2.8)
   '@jill64/svelte-ogp':
     specifier: 0.1.0
     version: 0.1.0(@sveltejs/kit@1.29.0)(svelte@4.2.8)
@@ -43,9 +46,6 @@ devDependencies:
   '@jill64/sentry-sveltekit-cloudflare':
     specifier: 1.5.0
     version: 1.5.0(@sveltejs/kit@1.29.0)(svelte@4.2.8)
-  '@jill64/svelte-menu':
-    specifier: ^0.0.3
-    version: 0.0.3(svelte@4.2.8)
   '@playwright/test':
     specifier: 1.40.1
     version: 1.40.1
@@ -644,7 +644,7 @@ packages:
     dependencies:
       nanoid: 5.0.4
       svelte: 4.2.8
-    dev: true
+    dev: false
 
   /@jill64/svelte-ogp@0.1.0(@sveltejs/kit@1.29.0)(svelte@4.2.8):
     resolution: {integrity: sha512-6cI/U+r9zNG8CD04/06FwisO4nDCnqSF40kTS1fQWCCe5v+2qliKi6jgiwe/ZRM6U+0cSsKQjMBcZbIgX9j7UQ==}
@@ -1118,7 +1118,6 @@ packages:
   /@sveltejs/kit@1.29.0(svelte@4.2.8)(vite@5.0.7):
     resolution: {integrity: sha512-O+DvB67Ouha0pVKh0nRxr8QwZcls8h4knLoS6Sk1DhRLAuQzuM0FNnPNIhMHL1iP1LFeXd3P+bk+h2V07WSF5w==}
     engines: {node: ^16.14 || >=18}
-    hasBin: true
     requiresBuild: true
     peerDependencies:
       svelte: ^3.54.0 || ^4.0.0-next.0 || ^5.0.0-next.0
@@ -1807,7 +1806,6 @@ packages:
 
   /eslint-config-prettier@9.1.0(eslint@8.55.0):
     resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
-    hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
@@ -2482,7 +2480,7 @@ packages:
     resolution: {integrity: sha512-vAjmBf13gsmhXSgBrtIclinISzFFy22WwCYoyilZlsrRXNIHSwgFQ1bEdjRwMT3aoadeIF6HMuDRlOxzfXV8ig==}
     engines: {node: ^18 || >=20}
     hasBin: true
-    dev: true
+    dev: false
 
   /natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
@@ -3130,7 +3128,6 @@ packages:
   /vite@5.0.7:
     resolution: {integrity: sha512-B4T4rJCDPihrQo2B+h1MbeGL/k/GMAHzhQ8S0LjQ142s6/+l3hHTT095ORvsshj4QCkoWu3Xtmob5mazvakaOw==}
     engines: {node: ^18.0.0 || >=20.0.0}
-    hasBin: true
     peerDependencies:
       '@types/node': ^18.0.0 || >=20.0.0
       less: '*'

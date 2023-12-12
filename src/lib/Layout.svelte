@@ -60,7 +60,12 @@
   </span>
 </header>
 
-<Menu noOuterClosing let:state Class="installation" summaryClass="installation-summary">
+<Menu
+  noOuterClosing
+  let:state
+  Class="installation"
+  summaryClass="installation-summary"
+>
   {state === 'CLOSED' || state === 'CLOSING' ? '▷' : '▽'} Installation
   <div transition:slide style:margin-bottom="1rem" slot="contents">
     <Highlight code="npm i {name}" language={bash} />
