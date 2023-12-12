@@ -11,5 +11,5 @@
 </script>
 
 <CodeCopy color="inherit" effect={$theme === 'dark' ? 'pop' : 'push'}>
-  <Highlight {code} {language} />
+  <Highlight code={code.trim()} {language} />
 </CodeCopy>
