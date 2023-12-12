@@ -105,6 +105,7 @@
   :global(body) {
     margin: 0;
     padding: 0 1rem;
+    transition: all 0.15s ease-in-out;
   }
   :global(body),
   :global(.light body) {
