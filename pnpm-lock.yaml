@@ -8,6 +8,9 @@ dependencies:
   '@jill64/svelte-dark-theme':
     specifier: 2.2.14
     version: 2.2.14(@sveltejs/kit@1.29.0)(svelte@4.2.8)
+  '@jill64/svelte-menu':
+    specifier: 0.1.0
+    version: 0.1.0(svelte@4.2.8)
   '@jill64/svelte-ogp':
     specifier: 0.1.0
     version: 0.1.0(@sveltejs/kit@1.29.0)(svelte@4.2.8)
@@ -631,6 +634,14 @@ packages:
       svelte: ^4.0.0
     dependencies:
       '@sveltejs/kit': 1.29.0(svelte@4.2.8)(vite@5.0.7)
+      svelte: 4.2.8
+    dev: false
+
+  /@jill64/svelte-menu@0.1.0(svelte@4.2.8):
+    resolution: {integrity: sha512-DeqMACJ5w7fYtIknavm+JbUsBQcGNLg0v07uQqAVpmBZ0LZxvbJtZvcdX97CqSvnXMuFb4lWL7JWEuHreEi67Q==}
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
       svelte: 4.2.8
     dev: false
 

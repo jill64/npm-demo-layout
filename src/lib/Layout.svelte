@@ -1,11 +1,15 @@
 <script lang="ts">
   import { browser } from '$app/environment'
   import { FlipButton, ThemeManager, theme } from '@jill64/svelte-dark-theme'
+  import { Menu } from '@jill64/svelte-menu'
   import { OGP } from '@jill64/svelte-ogp'
   import { Toaster } from '@jill64/svelte-toast'
   import { HighlightSwitcher } from 'svelte-highlight-switcher'
+  import { slide } from 'svelte/transition'
   import Badges from './Badges.svelte'
   import GitHubLogo from './GitHubLogo.svelte'
+  import Highlight from './highlight/Highlight.svelte'
+  import { bash } from './highlight/languages'
 
   export let README: string
   export let packageJson: {
@@ -23,7 +27,6 @@
   }
 
   export let disableThemeSwitcher = false
-  export let disableOGP = false
 
   $: ({ name, author, description, homepage, repository } = packageJson)
 </script>
@@ -38,11 +41,7 @@
 </svelte:head>
 
 <Toaster dark={$theme === 'dark'} />
-
-{#if !disableOGP}
-  <OGP title={name} site_name={name} {description} image={repository.image} />
-{/if}
-
+<OGP title={name} site_name={name} {description} image={repository.image} />
 <ThemeManager />
 
 {#if !disableThemeSwitcher}
@@ -60,6 +59,18 @@
     <GitHubLogo href={homepage} />
   </span>
 </header>
+
+<Menu
+  noOuterClosing
+  let:state
+  Class="installation"
+  summaryClass="installation-summary"
+>
+  {state === 'CLOSED' || state === 'CLOSING' ? '▷' : '▽'} Installation
+  <div transition:slide style:margin-bottom="1rem" slot="contents">
+    <Highlight code="npm i {name}" language={bash} />
+  </div>
+</Menu>
 
 <slot />
 
@@ -127,7 +138,6 @@
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
-    padding-bottom: 1.75rem;
   }
 
   h1 {
@@ -187,7 +197,6 @@
     color: royalblue;
     text-decoration: none;
   }
-
   small a:hover {
     text-decoration: underline;
   }
@@ -197,5 +206,27 @@
   }
   :global(.dark code.hljs) {
     border: 1px solid #252525;
+  }
+  :global(.installation-summary) {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+    color: gray;
+  }
+  :global(.installation-summary:hover) {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  :global(.installation-summary:action) {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  :global(.dark .installation-summary:hover) {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  :global(.dark .installation-summary:action) {
+    background: rgba(255, 255, 255, 0.15);
+  }
+  :global(.installation pre) {
+    margin: 0;
+    padding: 0;
   }
 </style>

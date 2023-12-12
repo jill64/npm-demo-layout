@@ -1,4 +1,5 @@
-export { theme, setting } from '@jill64/svelte-dark-theme'
+export { setting, theme } from '@jill64/svelte-dark-theme'
+export { Menu } from '@jill64/svelte-menu'
 export { toast } from '@jill64/svelte-toast'
 export { default as Layout } from './Layout.svelte'
 export { hooks } from './hooks'
