@@ -15,8 +15,8 @@ dependencies:
     specifier: 1.0.0
     version: 1.0.0(@sveltejs/kit@2.0.0)(svelte@4.2.8)
   '@jill64/svelte-sanitize':
-    specifier: 1.0.3
-    version: 1.0.3(svelte@4.2.8)
+    specifier: 1.1.0
+    version: 1.1.0(svelte@4.2.8)
   '@jill64/svelte-toast':
     specifier: 1.2.5
     version: 1.2.5(svelte@4.2.8)
@@ -453,8 +453,8 @@ packages:
       svelte: 4.2.8
     dev: false
 
-  /@jill64/svelte-sanitize@1.0.3(svelte@4.2.8):
-    resolution: {integrity: sha512-r+n2ZtWpPuGSY0enTJKc1+RChRvD0xeAZOcfpVuqyn2onXuQWJpXEzAvfx+SP2nChwWzoJSQc+sMhb5NED/lIw==}
+  /@jill64/svelte-sanitize@1.1.0(svelte@4.2.8):
+    resolution: {integrity: sha512-nqdPD2UGJiOn/z5RHm7bSHK1DWwTCO8jksyDp6Fq3yktyRtXKUhkHL1zQ8QBi2jTqDETp4jbEvFbrzj+fkSq5w==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
