@@ -2,7 +2,7 @@
   export let href: string
 </script>
 
-<a {href}>
+<a {href} title="GitHub">
   <svg
     width="28"
     height="28"
