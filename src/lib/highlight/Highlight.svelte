@@ -10,6 +10,8 @@
     : never)['language']
 </script>
 
-<CodeCopy color="inherit" effect={$theme === 'dark' ? 'pop' : 'push'}>
-  <Highlight code={code.trim()} {language} />
-</CodeCopy>
+<div style:overflow-x="auto">
+  <CodeCopy color="inherit" effect={$theme === 'dark' ? 'pop' : 'push'}>
+    <Highlight code={code.trim()} {language} />
+  </CodeCopy>
+</div>

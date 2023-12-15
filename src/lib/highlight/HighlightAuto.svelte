@@ -6,6 +6,8 @@
   export let code: string
 </script>
 
-<CodeCopy color="inherit" effect={$theme === 'dark' ? 'pop' : 'push'}>
-  <HighlightAuto code={code.trim()} />
-</CodeCopy>
+<div style:overflow-x="auto">
+  <CodeCopy color="inherit" effect={$theme === 'dark' ? 'pop' : 'push'}>
+    <HighlightAuto code={code.trim()} />
+  </CodeCopy>
+</div>
