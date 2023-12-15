@@ -24,8 +24,8 @@ dependencies:
     specifier: 1.0.0
     version: 1.0.0
   svelte-code-copy:
-    specifier: 0.2.0
-    version: 0.2.0(@sveltejs/kit@2.0.0)(svelte@4.2.8)
+    specifier: 1.0.0
+    version: 1.0.0(@sveltejs/kit@2.0.0)(svelte@4.2.8)
   svelte-highlight:
     specifier: 7.4.2
     version: 7.4.2
@@ -2620,8 +2620,8 @@ packages:
       ts-serde: 1.0.0
     dev: false
 
-  /svelte-code-copy@0.2.0(@sveltejs/kit@2.0.0)(svelte@4.2.8):
-    resolution: {integrity: sha512-ki2T3JdWy8G4ZSuBtYCJgEkt4MBSmAwFj/+oQxecDAad5TSxw88OQtiK4RgASPkzW90R7APHD1Iuj0QuKUYLeA==}
+  /svelte-code-copy@1.0.0(@sveltejs/kit@2.0.0)(svelte@4.2.8):
+    resolution: {integrity: sha512-Sfms7SgIP/eUdV3fewIa7MDYunZWeoQWOUhz339ysvydJBGtYoLpBcsiVKX4yhVSdCD1V4BgGMXYlqiayRGhsA==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
