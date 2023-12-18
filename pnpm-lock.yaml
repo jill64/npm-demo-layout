@@ -12,8 +12,8 @@ dependencies:
     specifier: 1.0.3
     version: 1.0.3(svelte@4.2.8)
   '@jill64/svelte-ogp':
-    specifier: 1.1.0
-    version: 1.1.0(@sveltejs/kit@2.0.2)(svelte@4.2.8)
+    specifier: 1.1.1
+    version: 1.1.1(@sveltejs/kit@2.0.2)(svelte@4.2.8)
   '@jill64/svelte-sanitize':
     specifier: 1.1.0
     version: 1.1.0(svelte@4.2.8)
@@ -444,8 +444,8 @@ packages:
       svelte: 4.2.8
     dev: false
 
-  /@jill64/svelte-ogp@1.1.0(@sveltejs/kit@2.0.2)(svelte@4.2.8):
-    resolution: {integrity: sha512-am1BhLDLrEew58KQDDma2iPzDKUJDX9QC95r4eqLirvIdudXJZoUsZ2WbHJKESVpbErNGieqGvRX7GChHeMsVA==}
+  /@jill64/svelte-ogp@1.1.1(@sveltejs/kit@2.0.2)(svelte@4.2.8):
+    resolution: {integrity: sha512-b8ElNohhKPNy6wBYMykVXO3QpkQgaaULjnwi8d2nRfbmPcbBwYvd0/m7u1/6ycxJMOtEQVHJhIg8PMhr4Dh0hQ==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
