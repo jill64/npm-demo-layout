@@ -1,1 +1,1 @@
-export * from 'svelte-highlight/languages'
+export * from 'svelte-highlight/languages/index'
