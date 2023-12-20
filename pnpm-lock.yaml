@@ -24,8 +24,8 @@ dependencies:
     specifier: 1.0.0
     version: 1.0.0
   svelte-code-copy:
-    specifier: 1.0.3
-    version: 1.0.3(@sveltejs/kit@2.0.4)(svelte@4.2.8)
+    specifier: 1.0.4
+    version: 1.0.4(@sveltejs/kit@2.0.4)(svelte@4.2.8)
   svelte-highlight:
     specifier: 7.4.6
     version: 7.4.6
@@ -319,8 +319,8 @@ packages:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
     dev: true
 
-  /@jill64/async-observer@1.2.0:
-    resolution: {integrity: sha512-qXM9YZMZPO8mQ3bMyAtHjlxyH9Q74tCbEinZVDzYgpGwKLNEFF/1099bPLBCBfUkOgOiwwB5H7/o8EvpTg+Lbg==}
+  /@jill64/async-observer@1.2.2:
+    resolution: {integrity: sha512-MYd+S/xS1ZFjX6koiJPrmuS/vHR6JkUn78nUaHDTwzW+u9cGN2MAOQJigUndMZyCoMoLyVUgilMU6YE6S26xIQ==}
     dev: false
 
   /@jill64/eslint-config-svelte@1.0.7(svelte@4.2.8)(typescript@5.3.3):
@@ -2097,12 +2097,12 @@ packages:
       ts-serde: 1.0.0
     dev: false
 
-  /svelte-code-copy@1.0.3(@sveltejs/kit@2.0.4)(svelte@4.2.8):
-    resolution: {integrity: sha512-Tw43U3vOEVYCzKkLFjp1Bo4L0WkVJWW+lTVU3AcYaGW1jGGaV7AmRNwt2mm83uYOy1xpKUzab95+lFX46Rkgrg==}
+  /svelte-code-copy@1.0.4(@sveltejs/kit@2.0.4)(svelte@4.2.8):
+    resolution: {integrity: sha512-TS07+etBRqHL15WdaOgbmV54SLjwEU+a/SsRFVJR1oblCXgPlYrNHVbMq81A5pCG1nyuoTSXlDe7LeYX78LX+g==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
-      '@jill64/async-observer': 1.2.0
+      '@jill64/async-observer': 1.2.2
       svelte: 4.2.8
       svelte-feather-icons: 4.1.0
       svelte-hydrated: 1.0.2(@sveltejs/kit@2.0.4)(svelte@4.2.8)
