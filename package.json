@@ -54,7 +54,7 @@
     "@sveltejs/vite-plugin-svelte": "3.0.1"
   },
   "dependencies": {
-    "@jill64/svelte-dark-theme": "2.3.12",
+    "@jill64/svelte-dark-theme": "2.3.13",
     "@jill64/svelte-ogp": "1.1.4",
     "@jill64/svelte-sanitize": "1.1.5",
     "@jill64/svelte-menu": "1.0.5",
