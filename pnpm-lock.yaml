@@ -21,8 +21,8 @@ dependencies:
     specifier: 1.3.7
     version: 1.3.7(@sveltejs/kit@2.3.2)(svelte@4.2.8)
   '@jill64/universal-sanitizer':
-    specifier: 1.0.0
-    version: 1.0.0
+    specifier: 1.0.2
+    version: 1.0.2
   svelte-code-copy:
     specifier: 1.0.5
     version: 1.0.5(@sveltejs/kit@2.3.2)(svelte@4.2.8)
@@ -478,15 +478,6 @@ packages:
     resolution: {integrity: sha512-bUm6Hlb+aCnTldvzqStUfIyLfub5apoT7x4ixfOSAjx/fijkSIJ+mM4/wQsI8FZ1BlfwPFeZT5UDb4cBHTaO6Q==}
     dependencies:
       ts-serde: 1.0.2
-    dev: false
-
-  /@jill64/universal-sanitizer@1.0.0:
-    resolution: {integrity: sha512-+9EGfkGxMv7cXUhYsP7XDdWSqUC63+ta8BiOFUj6MST84lTUSGscFOUSJU+kg6rCUeGp4zsqzRMIEEVsIFXGzA==}
-    dependencies:
-      '@types/dompurify': 3.0.5
-      '@types/sanitize-html': 2.9.5
-      dompurify: 3.0.6
-      sanitize-html: 2.11.0
     dev: false
 
   /@jill64/universal-sanitizer@1.0.2:
@@ -1200,10 +1191,6 @@ packages:
     engines: {node: '>= 4'}
     dependencies:
       domelementtype: 2.3.0
-    dev: false
-
-  /dompurify@3.0.6:
-    resolution: {integrity: sha512-ilkD8YEnnGh1zJ240uJsW7AzE+2qpbOUYjacomn3AvJ6J4JhKGSZ2nh4wUIXPZrEPppaCLx5jFe8T89Rk8tQ7w==}
     dev: false
 
   /dompurify@3.0.8:
