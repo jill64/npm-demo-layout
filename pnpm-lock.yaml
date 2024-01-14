@@ -9,8 +9,8 @@ dependencies:
     specifier: 2.3.13
     version: 2.3.13(@sveltejs/kit@2.3.2)(svelte@4.2.8)
   '@jill64/svelte-menu':
-    specifier: 1.0.5
-    version: 1.0.5(svelte@4.2.8)
+    specifier: 1.0.7
+    version: 1.0.7(svelte@4.2.8)
   '@jill64/svelte-ogp':
     specifier: 1.1.4
     version: 1.1.4(@sveltejs/kit@2.3.2)(svelte@4.2.8)
@@ -418,8 +418,8 @@ packages:
       svelte: 4.2.8
     dev: false
 
-  /@jill64/svelte-menu@1.0.5(svelte@4.2.8):
-    resolution: {integrity: sha512-1IniHCEDpv+4p2k1Uf/lNWOCGZtJfZps1S7EJHJcuYH8XZGLhuqTfH19cL0byNUq+djub7yzGdrAIpjVupJQww==}
+  /@jill64/svelte-menu@1.0.7(svelte@4.2.8):
+    resolution: {integrity: sha512-4lrlM5SfZ9U3ivh/YU6IJJXQiwTLNUmykHuRC1RNVnnoTB8GaEGbKsXXPtf34rsQBU4+ph2epsbmqQPq93T+bA==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
