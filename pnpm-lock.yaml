@@ -27,11 +27,11 @@ dependencies:
     specifier: 1.0.10
     version: 1.0.10(@sveltejs/kit@2.5.0)(svelte@4.2.9)
   svelte-highlight:
-    specifier: 7.4.8
-    version: 7.4.8
+    specifier: 7.5.0
+    version: 7.5.0
   svelte-highlight-switcher:
     specifier: 1.2.4
-    version: 1.2.4(svelte-highlight@7.4.8)(svelte@4.2.9)
+    version: 1.2.4(svelte-highlight@7.5.0)(svelte@4.2.9)
 
 devDependencies:
   '@jill64/eslint-config-svelte':
@@ -2190,18 +2190,18 @@ packages:
       svelte-writable-derived: 3.1.0(svelte@4.2.9)
     dev: false
 
-  /svelte-highlight-switcher@1.2.4(svelte-highlight@7.4.8)(svelte@4.2.9):
+  /svelte-highlight-switcher@1.2.4(svelte-highlight@7.5.0)(svelte@4.2.9):
     resolution: {integrity: sha512-47GnpqT9C7c1w1uaDUtdEBCCJvG1QoNoZzJCEh4oUJFC24+S9OP+Uu58BXu6x+95C15FSbrzyoY49jFbMrxjxQ==}
     peerDependencies:
       svelte: ^4.0.0
       svelte-highlight: ^7.4.6
     dependencies:
       svelte: 4.2.9
-      svelte-highlight: 7.4.8
+      svelte-highlight: 7.5.0
     dev: false
 
-  /svelte-highlight@7.4.8:
-    resolution: {integrity: sha512-KjXI+RwpBiDvwgZX9M0T6JpmAPhLjC4Gcks5qIDrFd7iO/pEBFR3B6qeMUTFIhxipHEPp/rC4/0enAvCQtHp+A==}
+  /svelte-highlight@7.5.0:
+    resolution: {integrity: sha512-QbuGwX2wygDQSC1G4jFxXYrz3S2lfm223e24SHRoH2ArbA8uHpEgTaUlCOKoV2QQHvj8ijcTY4DipfVqXq2o5w==}
     dependencies:
       highlight.js: 11.9.0
     dev: false
