@@ -50,6 +50,6 @@ export const handle = hooks
 
 ## License
 
-MIT
+[MIT](LICENSE)
 
 <!----- END GHOST DOCS FOOTER ----->
