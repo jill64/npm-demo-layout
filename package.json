@@ -58,7 +58,7 @@
     "@jill64/svelte-dark-theme": "2.3.35",
     "@jill64/svelte-menu": "1.0.13",
     "@jill64/svelte-ogp": "1.1.13",
-    "@jill64/svelte-toast": "1.3.19",
+    "@jill64/svelte-toast": "1.3.20",
     "@jill64/svelte-sanitize": "1.2.6",
     "svelte-code-copy": "1.0.16",
     "svelte-highlight": "7.6.0",
