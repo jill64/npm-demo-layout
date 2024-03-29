@@ -1,7 +1,7 @@
 {
   "name": "@jill64/npm-demo-layout",
   "description": "🎨 My Svelte layout template for npm library demo site",
-  "version": "1.0.143",
+  "version": "1.0.144",
   "main": "dist/index.js",
   "type": "module",
   "files": [
