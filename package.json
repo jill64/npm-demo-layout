@@ -62,7 +62,7 @@
     "@jill64/svelte-sanitize": "1.2.12",
     "svelte-code-copy": "1.0.20",
     "svelte-highlight": "7.6.0",
-    "svelte-highlight-switcher": "1.2.8"
+    "svelte-highlight-switcher": "1.2.9"
   },
   "license": "MIT",
   "bugs": "https://github.com/jill64/npm-demo-layout/issues",
