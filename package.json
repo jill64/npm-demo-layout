@@ -52,7 +52,7 @@
     "@jill64/universal-sanitizer": "1.2.13",
     "svelte": "4.2.18",
     "typescript": "5.4.5",
-    "vite": "5.2.13"
+    "vite": "5.3.0"
   },
   "dependencies": {
     "@jill64/svelte-dark-theme": "2.3.77",
@@ -76,7 +76,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/npm-demo-layout.git",
-    "image": "https://opengraph.githubassets.com/56270e0c82da16924d47e12f5b74a01f8f3ff6c4904ef6ecfb0165818062d49f/jill64/npm-demo-layout"
+    "image": "https://opengraph.githubassets.com/5767f732174a59c6f1bcdc3270b8dfcc91b655e7a311f5d3285d44b37e25a4c4/jill64/npm-demo-layout"
   },
   "publishConfig": {
     "access": "public"
