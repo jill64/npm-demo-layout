@@ -76,7 +76,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/npm-demo-layout.git",
-    "image": "https://opengraph.githubassets.com/b5146a14571fd91c98a8a968b0539508621af53471d9c04a7cad5706a945cb37/jill64/npm-demo-layout"
+    "image": "https://opengraph.githubassets.com/56414d221f5632cfa1fe9524567e9abae0eb13c3d481084708b301a0f861fedc/jill64/npm-demo-layout"
   },
   "publishConfig": {
     "access": "public"
