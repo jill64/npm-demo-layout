@@ -1,7 +1,7 @@
 {
   "name": "@jill64/npm-demo-layout",
   "description": "🎨 My Svelte layout template for npm library demo site",
-  "version": "1.0.223",
+  "version": "1.0.224",
   "main": "dist/index.js",
   "type": "module",
   "files": [
@@ -62,7 +62,7 @@
     "@jill64/svelte-sanitize": "1.2.22",
     "svelte-code-copy": "1.0.29",
     "svelte-highlight": "7.6.1",
-    "svelte-highlight-switcher": "1.2.13"
+    "svelte-highlight-switcher": "1.2.14"
   },
   "license": "MIT",
   "bugs": "https://github.com/jill64/npm-demo-layout/issues",
@@ -76,7 +76,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/npm-demo-layout.git",
-    "image": "https://opengraph.githubassets.com/55ff71378d62767ae00d17bb7619d49792ed1b1b12db10bf1d57ec5a8c0e5d8b/jill64/npm-demo-layout"
+    "image": "https://opengraph.githubassets.com/81c91ee384fa796a99319a6ec2b2faaecd99be355f34158397030f7b4810a362/jill64/npm-demo-layout"
   },
   "publishConfig": {
     "access": "public"
