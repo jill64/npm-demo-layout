@@ -59,7 +59,7 @@
     "@jill64/svelte-menu": "1.0.24",
     "@jill64/svelte-ogp": "1.1.29",
     "@jill64/svelte-toast": "1.3.44",
-    "@jill64/svelte-sanitize": "1.2.22",
+    "@jill64/svelte-sanitize": "1.2.23",
     "svelte-code-copy": "1.0.30",
     "svelte-highlight": "7.6.1",
     "svelte-highlight-switcher": "1.2.14"
