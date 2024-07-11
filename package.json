@@ -41,7 +41,7 @@
     "svelte": "^4.0.0"
   },
   "devDependencies": {
-    "@jill64/eslint-config-svelte": "1.2.40",
+    "@jill64/eslint-config-svelte": "1.2.41",
     "@jill64/playwright-config": "2.4.0",
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "1.7.15",
@@ -76,7 +76,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/npm-demo-layout.git",
-    "image": "https://opengraph.githubassets.com/0582c9aae815eedecfd42855147f8de8969eba607df5874fde81c458ae3751d0/jill64/npm-demo-layout"
+    "image": "https://opengraph.githubassets.com/12a8c369d51744b2f72e5d63dfb91436ec2b3bce8a0d50979106994379101dd4/jill64/npm-demo-layout"
   },
   "publishConfig": {
     "access": "public"
