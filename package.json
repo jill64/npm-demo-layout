@@ -55,7 +55,7 @@
     "vite": "5.3.5"
   },
   "dependencies": {
-    "@jill64/svelte-dark-theme": "2.3.91",
+    "@jill64/svelte-dark-theme": "2.3.92",
     "@jill64/svelte-menu": "1.0.26",
     "@jill64/svelte-ogp": "1.1.31",
     "@jill64/svelte-toast": "1.3.49",
