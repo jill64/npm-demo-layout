@@ -49,7 +49,7 @@
     "@sveltejs/adapter-cloudflare": "4.7.2",
     "@sveltejs/kit": "2.5.22",
     "@sveltejs/vite-plugin-svelte": "3.1.1",
-    "@jill64/universal-sanitizer": "1.3.0",
+    "@jill64/universal-sanitizer": "1.3.1",
     "svelte": "4.2.18",
     "typescript": "5.5.4",
     "vite": "5.4.0"
@@ -76,7 +76,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/npm-demo-layout.git",
-    "image": "https://opengraph.githubassets.com/225361aab1e4b99ec3b6420d5e8dd5b969c23ec198286b3867c8eac97a777b60/jill64/npm-demo-layout"
+    "image": "https://opengraph.githubassets.com/4bbc212a6430e13a0c2bea6f929801471ce148e31d8db2018a7bb3cc27df5181/jill64/npm-demo-layout"
   },
   "publishConfig": {
     "access": "public"
