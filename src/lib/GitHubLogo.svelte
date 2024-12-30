@@ -1,8 +1,8 @@
 <script lang="ts">
-  export let href: string
+  let { href }: { href: string } = $props()
 </script>
 
-<a {href} title="GitHub">
+<a {href} title="GitHub" aria-label="GitHub">
   <svg
     width="28"
     height="28"

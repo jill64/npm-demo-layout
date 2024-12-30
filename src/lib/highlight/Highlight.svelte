@@ -4,14 +4,19 @@
   import { CodeCopy } from 'svelte-code-copy'
   import { Highlight } from 'svelte-highlight'
 
-  export let code: string
-  export let language: (Highlight extends SvelteComponent<infer U>
-    ? U
-    : never)['language']
+  let {
+    code,
+    language
+  }: {
+    code: string
+    language: (Highlight extends SvelteComponent<infer U>
+      ? U
+      : never)['language']
+  } = $props()
 </script>
 
 <div style:overflow-x="auto">
-  <CodeCopy color="inherit" effect={$theme === 'dark' ? 'pop' : 'push'}>
+  <CodeCopy color="inherit" effect={theme.isDark ? 'pop' : 'push'}>
     <Highlight code={code.trim()} {language} />
   </CodeCopy>
 </div>
