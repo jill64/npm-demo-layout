@@ -1,9 +1,10 @@
 <script lang="ts">
   import { browser } from '$app/environment'
-  import { FlipButton, ThemeManager, theme } from '@jill64/svelte-dark-theme'
+  import { FlipButton, theme, ThemeManager } from '@jill64/svelte-dark-theme'
   import { Menu } from '@jill64/svelte-menu'
   import { OGP } from '@jill64/svelte-ogp'
   import { Toaster } from '@jill64/svelte-toast'
+  import type { Snippet } from 'svelte'
   import { HighlightSwitcher } from 'svelte-highlight-switcher'
   import { slide } from 'svelte/transition'
   import Badges from './Badges.svelte'
@@ -11,24 +12,32 @@
   import Highlight from './highlight/Highlight.svelte'
   import { bash } from './highlight/languages'
 
-  export let README: string
-  export let packageJson: {
-    name: string
-    description: string
-    homepage: string
-    author: {
+  let {
+    README,
+    packageJson,
+    disableThemeSwitcher = false,
+    children
+  }: {
+    README: string
+    packageJson: {
       name: string
-      url: string
-      image: string
+      description: string
+      homepage: string
+      author: {
+        name: string
+        url: string
+        image: string
+      }
+      repository: {
+        image: string
+      }
     }
-    repository: {
-      image: string
-    }
-  }
+    disableThemeSwitcher?: boolean
+    children: Snippet
+  } = $props()
 
-  export let disableThemeSwitcher = false
-
-  $: ({ name, author, description, homepage, repository } = packageJson)
+  let { name, author, description, homepage, repository } =
+    $derived(packageJson)
 </script>
 
 <svelte:head>
@@ -40,12 +49,12 @@
   {/if}
 </svelte:head>
 
-<Toaster dark={$theme === 'dark'} />
+<Toaster dark={theme.isDark} />
 <OGP title={name} site_name={name} {description} image={repository.image} />
 <ThemeManager />
 
 {#if !disableThemeSwitcher}
-  <HighlightSwitcher name={$theme === 'dark' ? 'githubDark' : 'github'} />
+  <HighlightSwitcher name={theme.isDark ? 'githubDark' : 'github'} />
 {/if}
 
 <header>
@@ -60,19 +69,18 @@
   </span>
 </header>
 
-<Menu
-  noOuterClosing
-  let:state
-  Class="installation"
-  summaryClass="installation-summary"
->
-  {state === 'CLOSED' || state === 'CLOSING' ? '▷' : '▽'} Installation
-  <div transition:slide style:margin-bottom="1rem" slot="contents">
-    <Highlight code="npm i {name}" language={bash} />
-  </div>
+<Menu noOuterClosing Class="installation" summaryClass="installation-summary">
+  {#snippet button(state)}
+    {state === 'CLOSED' || state === 'CLOSING' ? '▷' : '▽'} Installation
+  {/snippet}
+  {#snippet contents()}
+    <div transition:slide style:margin-bottom="1rem">
+      <Highlight code="npm i {name}" language={bash} />
+    </div>
+  {/snippet}
 </Menu>
 
-<slot />
+{@render children()}
 
 <footer>
   <small>

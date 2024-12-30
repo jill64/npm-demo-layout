@@ -1,15 +1,16 @@
 <script lang="ts">
   import { Render } from '@jill64/svelte-sanitize'
 
-  export let README: string
+  let { README }: { README: string } = $props()
 
-  $: badges =
+  let badges = $derived(
     README.match(
       new RegExp(
         /<!----- BEGIN GHOST DOCS BADGES ----->(.*)<!----- END GHOST DOCS BADGES ----->/,
         's'
       )
     )?.[1] ?? ''
+  )
 </script>
 
 <span>
