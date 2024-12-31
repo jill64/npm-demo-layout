@@ -1,17 +1,20 @@
 <script lang="ts">
   import { theme } from '@jill64/svelte-dark-theme'
-  import type { SvelteComponent } from 'svelte'
+  import type { LanguageFn } from 'highlight.js'
   import { CodeCopy } from 'svelte-code-copy'
   import { Highlight } from 'svelte-highlight'
+
+  interface LanguageType<TName extends string> {
+    name: TName
+    register: LanguageFn
+  }
 
   let {
     code,
     language
   }: {
     code: string
-    language: (Highlight extends SvelteComponent<infer U>
-      ? U
-      : never)['language']
+    language: LanguageType<string>
   } = $props()
 </script>
 
