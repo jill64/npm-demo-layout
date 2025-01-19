@@ -1,7 +1,7 @@
 {
   "name": "@jill64/npm-demo-layout",
   "description": "🎨 My Svelte layout template for npm library demo site",
-  "version": "2.0.9",
+  "version": "2.0.10",
   "main": "dist/index.js",
   "type": "module",
   "files": [
@@ -57,7 +57,7 @@
   "dependencies": {
     "@jill64/svelte-dark-theme": "5.1.1",
     "@jill64/svelte-menu": "2.0.0",
-    "@jill64/svelte-ogp": "2.0.1",
+    "@jill64/svelte-ogp": "2.0.2",
     "@jill64/svelte-toast": "2.1.5",
     "@jill64/svelte-sanitize": "2.1.1",
     "svelte-code-copy": "2.2.0",
@@ -76,7 +76,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/npm-demo-layout.git",
-    "image": "https://opengraph.githubassets.com/d4a5e693983f3d20a84ac3564adcd9d5fdbfb590173f526a9e7ef22309858335/jill64/npm-demo-layout"
+    "image": "https://opengraph.githubassets.com/e637820fa45a10734a639d573b1ecac8529088cf7f79a08fd1f1b0f10cd96d15/jill64/npm-demo-layout"
   },
   "publishConfig": {
     "access": "public"
