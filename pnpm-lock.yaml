@@ -21,8 +21,8 @@ importers:
         specifier: 2.1.1
         version: 2.1.1(svelte@5.16.2)
       '@jill64/svelte-toast':
-        specifier: 2.1.5
-        version: 2.1.5(@sveltejs/kit@2.16.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.11(@types/node@22.10.2)))(svelte@5.16.2)(vite@6.0.11(@types/node@22.10.2)))(svelte@5.16.2)
+        specifier: 2.1.6
+        version: 2.1.6(@sveltejs/kit@2.16.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.11(@types/node@22.10.2)))(svelte@5.16.2)(vite@6.0.11(@types/node@22.10.2)))(svelte@5.16.2)
       svelte-code-copy:
         specifier: 2.2.0
         version: 2.2.0(@sveltejs/kit@2.16.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.11(@types/node@22.10.2)))(svelte@5.16.2)(vite@6.0.11(@types/node@22.10.2)))(svelte@5.16.2)
@@ -529,8 +529,8 @@ packages:
       '@sveltejs/kit': ^2.0.0
       svelte: ^5.0.0
 
-  '@jill64/svelte-toast@2.1.5':
-    resolution: {integrity: sha512-9Xk49WjzqkTaZPVdZNjecd+eqdzcPElitYLQSJvgSwNOKndtV05mC3vW3Gpj4wHBlmf1qBXh9Q7fug71X69IRQ==}
+  '@jill64/svelte-toast@2.1.6':
+    resolution: {integrity: sha512-aBUZxpCr2au/IunEsIwjIAuYuop9OAjUsuwIqyOeq9kHyKQbHwE0d9nsvA1nfy9h4mszqqkH+a8A2YUgS1+nMw==}
     peerDependencies:
       svelte: ^5.0.0
 
@@ -2056,7 +2056,7 @@ snapshots:
       '@sveltejs/kit': 2.16.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.11(@types/node@22.10.2)))(svelte@5.16.2)(vite@6.0.11(@types/node@22.10.2))
       svelte: 5.16.2
 
-  '@jill64/svelte-toast@2.1.5(@sveltejs/kit@2.16.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.11(@types/node@22.10.2)))(svelte@5.16.2)(vite@6.0.11(@types/node@22.10.2)))(svelte@5.16.2)':
+  '@jill64/svelte-toast@2.1.6(@sveltejs/kit@2.16.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.11(@types/node@22.10.2)))(svelte@5.16.2)(vite@6.0.11(@types/node@22.10.2)))(svelte@5.16.2)':
     dependencies:
       '@jill64/svelte-device-theme': 2.0.1(@sveltejs/kit@2.16.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.11(@types/node@22.10.2)))(svelte@5.16.2)(vite@6.0.11(@types/node@22.10.2)))(svelte@5.16.2)
       svelte: 5.16.2
