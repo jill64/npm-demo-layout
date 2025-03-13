@@ -26,6 +26,13 @@ If you have problems building with pnpm, try the following
 pnpm i -D @jill64/universal-sanitizer
 ```
 
+If you have problems building with bun, try the following
+
+```sh
+bun a @jill64/universal-sanitizer
+```
+
+
 ## Usage
 
 ```svelte
