@@ -51,7 +51,7 @@
     "@sveltejs/vite-plugin-svelte": "5.0.3",
     "svelte": "5.23.0",
     "typescript": "5.8.2",
-    "vite": "6.2.1"
+    "vite": "6.2.2"
   },
   "dependencies": {
     "@jill64/svelte-dark-theme": "5.1.3",
