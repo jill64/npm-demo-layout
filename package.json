@@ -46,7 +46,7 @@
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "2.0.6",
     "@playwright/test": "1.51.1",
-    "@sveltejs/adapter-cloudflare": "5.1.0",
+    "@sveltejs/adapter-cloudflare": "7.0.0",
     "@sveltejs/kit": "2.19.2",
     "@sveltejs/vite-plugin-svelte": "5.0.3",
     "svelte": "5.25.6",
@@ -75,7 +75,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/npm-demo-layout.git",
-    "image": "https://opengraph.githubassets.com/8a5c3d58ad3acf4967ba363647572c09e60758456ecf183d5fc619afd3702f0c/jill64/npm-demo-layout"
+    "image": "https://opengraph.githubassets.com/f8c12acc2ef32786bc45ebb938affb5fed91fe222ff633b0cc10eba951d07c0a/jill64/npm-demo-layout"
   },
   "publishConfig": {
     "access": "public"
