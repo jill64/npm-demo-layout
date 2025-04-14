@@ -37,7 +37,7 @@
     "test": "playwright test"
   },
   "peerDependencies": {
-    "@sveltejs/kit": "^2.0.0",
+    "@sveltejs/kit": "^2.20.6",
     "svelte": "^5.0.0"
   },
   "devDependencies": {
@@ -47,7 +47,7 @@
     "@jill64/sentry-sveltekit-cloudflare": "2.0.6",
     "@playwright/test": "1.51.1",
     "@sveltejs/adapter-cloudflare": "7.0.1",
-    "@sveltejs/kit": "2.19.2",
+    "@sveltejs/kit": "2.20.6",
     "@sveltejs/vite-plugin-svelte": "5.0.3",
     "svelte": "5.26.3",
     "typescript": "5.8.3",
@@ -75,7 +75,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/npm-demo-layout.git",
-    "image": "https://opengraph.githubassets.com/8c3d42b5c442ff48ef640381a566764c24207a97c0b720041bae9047ccb821b8/jill64/npm-demo-layout"
+    "image": "https://opengraph.githubassets.com/3748869cb1b45349c8fa73ca6f48071179f73545d58b9493b4b8092e7b057971/jill64/npm-demo-layout"
   },
   "publishConfig": {
     "access": "public"
