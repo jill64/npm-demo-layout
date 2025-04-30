@@ -51,7 +51,7 @@
     "@sveltejs/vite-plugin-svelte": "5.0.3",
     "svelte": "5.28.2",
     "typescript": "5.8.3",
-    "vite": "6.2.6"
+    "vite": "6.2.7"
   },
   "dependencies": {
     "@jill64/svelte-dark-theme": "5.1.6",
@@ -75,7 +75,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/npm-demo-layout.git",
-    "image": "https://opengraph.githubassets.com/bad6c99f7a38ecaa5ccfe27e6e2db8e7773cba449aa311301218340bd3d4c0e3/jill64/npm-demo-layout"
+    "image": "https://opengraph.githubassets.com/fe50f0b8bc05490bbc731d08e5c1e9c9acb752ae042a014cd53ebac5c0538bc3/jill64/npm-demo-layout"
   },
   "publishConfig": {
     "access": "public"
